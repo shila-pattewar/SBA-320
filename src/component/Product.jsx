@@ -1,16 +1,14 @@
 import { useEffect } from "react";
 
-let [products, setProducts] = useState([]);
-
 function Product() {
   useEffect(() => {
     console.log("loading use effect");
   });
 
   return (
-    <>
-      <h1>This is Product Page</h1>
-    </>
+    <div className="products">
+      <h1>This is Product area</h1>
+    </div>
   );
 }
 
