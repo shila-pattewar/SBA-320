@@ -30,7 +30,10 @@ function Product() {
       {Product.map((Product, index) => {
         return (
           <div className="product" key={index}>
-            {Product.title}
+            <img className="product-img" src={Product.image} alt="product" />
+            <h1>{Product.title}</h1>
+            <h2>{Product.price}</h2>
+            <p>{Product.description}</p>
           </div>
         );
       })}
