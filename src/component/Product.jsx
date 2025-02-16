@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 
+let [products, setProducts] = useState([]);
+
 function Product() {
   useEffect(() => {
     console.log("loading use effect");
