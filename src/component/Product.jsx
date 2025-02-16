@@ -28,7 +28,11 @@ function Product() {
   return (
     <div>
       {Product.map((Product, index) => {
-        return <div key={index}>{Product.title} </div>;
+        return (
+          <div className="product" key={index}>
+            {Product.title}
+          </div>
+        );
       })}
     </div>
   );
