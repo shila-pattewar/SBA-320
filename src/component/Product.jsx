@@ -27,12 +27,8 @@ function Product() {
 
   return (
     <div>
-      {Product.map((Product) => {
-        return (
-          <div>
-            <h1>{Product.title}</h1> // see all products title
-          </div>
-        );
+      {Product.map((Product, index) => {
+        return <div key={index}>{Product.title} </div>;
       })}
     </div>
   );
