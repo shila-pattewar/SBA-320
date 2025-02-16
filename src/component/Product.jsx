@@ -1,3 +1,5 @@
+//https://fakestoreapi.com/docs
+
 import { useEffect } from "react";
 
 function Product() {
@@ -5,13 +7,11 @@ function Product() {
     console.log("loading use effect");
 
     // calling fakeApi
-
     fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-      })
+      .then((json) => console.log(json))
 
+      // to catch the error
       .catch((error) => {
         console.log(error);
       });
