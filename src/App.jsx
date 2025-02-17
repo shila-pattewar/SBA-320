@@ -1,11 +1,11 @@
 import "./App.css";
-import Product from "./component/Product";
+import Products from "./component/Products";
 
 function App() {
   return (
     <>
       <h1>SBA 320</h1>
-      <Product />
+      <Products />
     </>
   );
 }
