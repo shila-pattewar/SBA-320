@@ -26,13 +26,13 @@ function Products() {
   }, []);
 
   return (
-    <div>
+    <div className="Products">
       {Products.map((product, index) => {
         return (
           <div className="product" key={index}>
             <img className="product-img" src={product.image} alt="product" />
-            <h1>{product.title}</h1>
-            <h2>{product.price}</h2>
+            <h2>{product.title}</h2>
+            <h3>Price {product.price}</h3>
             <p>{product.description}</p>
           </div>
         );

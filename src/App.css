@@ -1,13 +1,17 @@
-.product{
-  width: 100%;
-  padding: 20px;
-  background-color: lightgray;
+.Products{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 30px;
  }  
 
  .product-img{
-  width: 20%;
+  width: 70%;
  }
-
- p{
-  font-size: 25px;
- }
+ 
+.product{
+  width: 300px;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 40px;
+}
