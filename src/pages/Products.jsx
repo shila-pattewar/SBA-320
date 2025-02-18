@@ -1,9 +1,9 @@
 //https://fakestoreapi.com/docs
 
 import { Link } from "react-router-dom";
-
 import { useState } from "react";
 import { useEffect } from "react";
+import Nav from "../component/Nav/Categories";
 
 function Products() {
   // declare a state vairable ( like Products = [])
@@ -29,6 +29,9 @@ function Products() {
 
   return (
     <div className="Products">
+      <div className="categories-dropdown">
+        <Nav />
+      </div>
       {Products.map((product, index) => {
         return (
           <div className="product" key={index}>
